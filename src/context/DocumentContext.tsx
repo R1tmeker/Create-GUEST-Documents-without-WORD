@@ -63,13 +63,13 @@ const defaultSettings: DocumentSettings = {
 };
 
 const defaultTitlePage: TitlePageData = {
-  studentName: 'К. В. Воробьев',
+  studentName: 'А.С. Пушкин',
   groupNumber: '1ИСП-21',
   workTitle: 'Система учета посещаемости',
   discipline: 'Объектно-ориентированное программирование',
   documentCode: '09.02.07.28.001',
   year: '2025',
-  teacherName: 'К. В. Воробьев',
+  teacherName: 'К.В. Воробьев',
 };
 
 const initialDocument: DocumentState = {

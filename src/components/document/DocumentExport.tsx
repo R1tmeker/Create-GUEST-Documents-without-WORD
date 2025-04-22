@@ -179,7 +179,7 @@ const DocumentExport: React.FC<DocumentExportProps> = ({ onClose }) => {
         alignment: AlignmentType.RIGHT
       },
       {
-        text: docData.titlePage.studentName,
+        text: docData.titlePage.teacherName,
         spacing: { before: 240, after: 480 },
         alignment: AlignmentType.RIGHT
       },
@@ -233,7 +233,7 @@ const DocumentExport: React.FC<DocumentExportProps> = ({ onClose }) => {
       }),
       new Paragraph({
         children: [
-          new TextRun({ text: "В.В. Хромин", size: 24 })
+          new TextRun({ text: docData.titlePage.studentName, size: 24 })
         ],
         alignment: AlignmentType.RIGHT,
         spacing: { before: 0, after: 480 }
@@ -247,17 +247,17 @@ const DocumentExport: React.FC<DocumentExportProps> = ({ onClose }) => {
       }),
       new Paragraph({
         children: [
-          new TextRun({ text: "преподаватель", size: 24 })
+          new TextRun({ text: "преподаватель " + docData.titlePage.teacherName, size: 24 })
         ],
         alignment: AlignmentType.RIGHT,
         spacing: { before: 0, after: 240 }
       }),
       new Paragraph({
         children: [
-          new TextRun({ text: docData.titlePage.teacherName, size: 24 })
+          new TextRun({ text: "подпись, фамилия", size: 20, color: "666666" })
         ],
         alignment: AlignmentType.RIGHT,
-        spacing: { before: 240, after: 720 }
+        spacing: { before: 0, after: 720 }
       }),
       new Paragraph({
         children: [

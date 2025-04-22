@@ -123,54 +123,54 @@ const TitlePageEditor: React.FC = () => {
       
       <div className="mt-6 p-4 border border-gray-200 rounded-md bg-gray-50">
         <h3 className="text-sm font-medium text-gray-700 mb-2">Предпросмотр</h3>
-        <div className="bg-white p-6 border border-gray-300 text-center text-sm">
-          <p className="mb-4">Министерство науки и высшего образования Российской Федерации</p>
-          <p className="mb-4">федеральное государственное бюджетное образовательное учреждение<br />высшего образования</p>
-          <p className="mb-6">«Алтайский государственный технический университет им. И.И. Ползунова»</p>
+        <div className="bg-white p-6 border border-gray-300 text-center text-sm" style={{ lineHeight: 1.5 }}>
+          <p className="mb-2">Министерство науки и высшего образования Российской Федерации</p>
+          <p className="mb-2">федеральное государственное бюджетное образовательное учреждение<br />высшего образования</p>
+          <p className="mb-3">«Алтайский государственный технический университет им. И.И. Ползунова»</p>
           
-          <p className="mb-4">Университетский технологический колледж</p>
+          <p className="mb-1">Университетский технологический колледж</p>
+          <p className="text-[10pt] text-gray-500">наименование подразделения</p>
           
-          <p className="mb-2">Кафедра Информационные системы в экономике</p>
+          <p className="mb-1">Кафедра Информационные системы в экономике</p>
+          <p className="text-[10pt] text-gray-500 mb-2">наименование кафедры</p>
+          
           <p className="mb-4">Направление Информационные системы и программирование</p>
           
-          <div className="flex justify-end mb-4 text-right">
-            <div>
+          <div className="flex justify-end mb-16">
+            <div className="text-right">
               <p>Отчёт защищен с оценкой_________</p>
-              <p className="mt-4">{titlePage.studentName}</p>
-              <p className="text-xs text-gray-500">подпись руководителя и дата подписания</p>
+              <p className="mt-2">______________   {titlePage.teacherName}</p>
+              <p className="text-[10pt] text-gray-500">(подпись руководителя от вуза) (инициалы, фамилия)</p>
+              <p className="mt-2">"___"_______________2025г.</p>
             </div>
           </div>
           
-          <h2 className="text-lg font-bold mt-12 mb-2">ОТЧЁТ</h2>
-          <p className="mb-2">по лабораторной работе №*</p>
-          <p className="mb-4 font-bold">{titlePage.workTitle}</p>
-          <p className="mb-2">по дисциплине {titlePage.discipline}</p>
-          <p className="mb-8 text-xs">{titlePage.documentCode}</p>
+          <p className="text-lg font-bold mb-2">ОТЧЕТ</p>
+          <p className="mb-1">по лабораторной работе №*</p>
+          <p className="mb-1">{titlePage.workTitle}</p>
+          <p className="text-[10pt] text-gray-500 mb-2">тема лабораторной работы</p>
+          <p className="mb-1">по дисциплине {titlePage.discipline}</p>
+          <p className="mb-4">{titlePage.documentCode}</p>
+          <p className="text-[10pt] text-gray-500">обозначение документа</p>
           
           <div className="flex justify-between mt-16">
-            <div className="text-left">
+            <div className="text-left flex-1">
               <p>Студент группы {titlePage.groupNumber}</p>
-              <p className="text-xs text-gray-500">подпись, фамилия</p>
             </div>
-            <div className="text-right">
-              <p>В.В. Хромин</p>
+            <div className="text-right flex-1">
+              <p>{titlePage.studentName}</p>
+              <p className="text-[10pt] text-gray-500">инициалы, фамилия</p>
             </div>
           </div>
           
           <div className="flex justify-between mt-4">
-            <div className="text-left">
+            <div className="text-left flex-1">
               <p>Руководитель работы</p>
-              <p className="text-xs text-gray-500">должность, учёное звание</p>
+              <p className="text-[10pt] text-gray-500">должность, учёное звание</p>
             </div>
-            <div className="text-right">
-              <p>преподаватель</p>
-            </div>
-          </div>
-          
-          <div className="flex justify-end mt-2">
-            <div className="text-right">
+            <div className="text-right flex-1">
               <p>{titlePage.teacherName}</p>
-              <p className="text-xs text-gray-500">подпись, фамилия</p>
+              <p className="text-[10pt] text-gray-500">инициалы, фамилия</p>
             </div>
           </div>
           
